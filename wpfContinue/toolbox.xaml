@@ -7,13 +7,22 @@
         mc:Ignorable="d"
         Title="toolbox" Height="300" Width="400">
     <DockPanel>
-        <ToolBarTray>
+        <ToolBarTray DockPanel.Dock="Top">
             <ToolBar>
-                <Button>
-                    <Image Width="100" Height="100" Source="http://simpleicon.com/wp-content/uploads/icon2.png"></Image>
+                <Button Click="Button_Click" ToolTip="Delete txt">
+                    <Image Width="50" Height="50" Source="http://simpleicon.com/wp-content/uploads/icon2.png"></Image>
                 </Button>
+                <Separator/>
+                <Label>Font size color</Label>
+                <ComboBox Name="myCombo" SelectionChanged="ComboBox_SelectionChanged">
+                    <ComboBoxItem>10</ComboBoxItem>
+                    <ComboBoxItem IsSelected="True">20</ComboBoxItem>
+                    <ComboBoxItem>30</ComboBoxItem>
+
+                </ComboBox>
             </ToolBar>
 
         </ToolBarTray>
+        <TextBox x:Name="myTxtBox"></TextBox>
     </DockPanel>
 </Window>

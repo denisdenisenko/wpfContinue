@@ -23,5 +23,27 @@ namespace wpfContinue
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            myTxtBox.Text = "";
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBox cb = (ComboBox)sender;
+            ComboBoxItem cbItem = (ComboBoxItem)cb.SelectedItem;
+            string newCboxValue = (string)cbItem.Content;
+
+            int temp;
+            if (Int32.TryParse(newCboxValue, out temp))
+            
+            {
+                if (myTxtBox != null) 
+                {
+                    myTxtBox.FontSize = temp;
+                }
+            }
+        }
     }
 }
