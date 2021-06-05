@@ -15,7 +15,7 @@
                             <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/1200px-Flat_tick_icon.svg.png"></Image>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="1"></MenuItem>
+                    <MenuItem Header="ContextMenu" Click="MenuItem_Click_1"></MenuItem>
                     <MenuItem Header="2"></MenuItem>
                     <MenuItem Header="3"></MenuItem>
                 </MenuItem>
