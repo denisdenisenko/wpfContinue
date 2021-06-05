@@ -24,35 +24,35 @@ namespace wpfContinue
             InitializeComponent();
         }
 
-        private void miBold_Click(object sender, RoutedEventArgs e)
-        {
-            myTb.FontWeight = FontWeights.Bold;
-        }
-
-        private void miItalic_Click(object sender, RoutedEventArgs e)
-        {
-            myTb.FontStyle = FontStyles.Italic;
-
-        }
+      
 
         private void miBold_Checked(object sender, RoutedEventArgs e)
         {
+            myTb.FontWeight = FontWeights.Bold;
 
         }
 
         private void miBold_Unchecked(object sender, RoutedEventArgs e)
         {
+            myTb.FontWeight = FontWeights.Normal;
 
         }
 
         private void miItalic_Checked(object sender, RoutedEventArgs e)
         {
+            myTb.FontStyle = FontStyles.Italic;
 
         }
 
         private void miItalic_Unchecked(object sender, RoutedEventArgs e)
         {
+            myTb.FontStyle = FontStyles.Normal;
 
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            myButton.Content = "dont click me anymore";
         }
     }
 }

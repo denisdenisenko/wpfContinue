@@ -11,16 +11,28 @@
             <TextBox.ContextMenu>
                 <ContextMenu>
                     <MenuItem Name="miBold" Header="Bold" 
-                              Click="miBold_Click" IsCheckable="True"
+                               IsCheckable="True"
                               Checked="miBold_Checked" Unchecked="miBold_Unchecked"></MenuItem>
                     
                     <MenuItem Name="miItalic" Header="Italic"
-                              Click="miItalic_Click"
+                              
                               IsCheckable="True"
                               Checked="miItalic_Checked"
                               Unchecked="miItalic_Unchecked"></MenuItem>
                 </ContextMenu>
             </TextBox.ContextMenu>
         </TextBox>
+        <Button x:Name="myButton" Content="click me">
+            <Button.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="ChangeText" Click="MenuItem_Click">
+                        <MenuItem.Icon>
+                            <Image Source="https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png"></Image>
+
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </ContextMenu>
+            </Button.ContextMenu>
+        </Button>
     </StackPanel>
 </Window>
