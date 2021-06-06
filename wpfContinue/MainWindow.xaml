@@ -16,7 +16,7 @@
                         </MenuItem.Icon>
                     </MenuItem>
                     <MenuItem Header="ContextMenu" Click="MenuItem_Click_1"></MenuItem>
-                    <MenuItem Header="2"></MenuItem>
+                    <MenuItem Header="StatusBar" Click="MenuItem_Click_2"></MenuItem>
                     <MenuItem Header="3"></MenuItem>
                 </MenuItem>
                 <MenuItem Header="Open"></MenuItem>

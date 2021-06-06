@@ -37,5 +37,11 @@ namespace wpfContinue
             contextMenu cm = new contextMenu();
             cm.Show();
         }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+            statusBar sb = new statusBar();
+            sb.Show();
+        }
     }
 }
