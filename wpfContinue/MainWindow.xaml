@@ -17,7 +17,7 @@
                     </MenuItem>
                     <MenuItem Header="ContextMenu" Click="MenuItem_Click_1"></MenuItem>
                     <MenuItem Header="StatusBar" Click="MenuItem_Click_2"></MenuItem>
-                    <MenuItem Header="3"></MenuItem>
+                    <MenuItem Header="OpenFileDialog" Click="MenuItem_Click_3"></MenuItem>
                 </MenuItem>
                 <MenuItem Header="Open"></MenuItem>
                 <MenuItem Header="Clone Repository"></MenuItem>

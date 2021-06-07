@@ -58,6 +58,9 @@
     <Compile Include="contextMenu.xaml.cs">
       <DependentUpon>contextMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="openFileDialog.xaml.cs">
+      <DependentUpon>openFileDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="statusBar.xaml.cs">
       <DependentUpon>statusBar.xaml</DependentUpon>
     </Compile>
@@ -80,6 +83,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="openFileDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="statusBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

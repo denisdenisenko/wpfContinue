@@ -43,5 +43,11 @@ namespace wpfContinue
             statusBar sb = new statusBar();
             sb.Show();
         }
+
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+        {
+            openFileDialog ofd = new openFileDialog();
+            ofd.Show();
+        }
     }
 }
