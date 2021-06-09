@@ -29,7 +29,7 @@ namespace wpfContinue
 
         private void openFileButton_Click(object sender, RoutedEventArgs e)
         {
-            openFileDialog openFile = new openFileDialog();
+            OpenFileDialog openFile = new OpenFileDialog();
             openFile.ShowDialog();
         }
     }
