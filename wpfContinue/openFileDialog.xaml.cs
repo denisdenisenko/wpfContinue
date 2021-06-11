@@ -30,6 +30,9 @@ namespace wpfContinue
         private void openFileButton_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFile = new OpenFileDialog();
+
+            openFile.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
             if (openFile.ShowDialog() == true) 
             {
                 myTextBox.Text = File.ReadAllText(openFile.FileName);
