@@ -13,7 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-using System.IO;
 
 namespace wpfContinue
 {
@@ -31,7 +30,11 @@ namespace wpfContinue
         {
             OpenFileDialog openFile = new OpenFileDialog();
 
-            openFile.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            //openFile.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.CommonProgramFiles);
+
+            //openFile.InitialDirectory = @"C:\";
+
+            openFile.InitialDirectory = System.IO.Path.GetFullPath(Environment.CurrentDirectory + @"\..\..\..");
 
             if (openFile.ShowDialog() == true) 
             {
