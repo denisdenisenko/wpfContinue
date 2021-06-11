@@ -34,7 +34,10 @@ namespace wpfContinue
 
             //openFile.InitialDirectory = @"C:\";
 
-            openFile.InitialDirectory = System.IO.Path.GetFullPath(Environment.CurrentDirectory + @"\..\..\..");
+            openFile.InitialDirectory = 
+                System.IO.Path.GetFullPath(Environment.CurrentDirectory + @"\..\..\..\..");
+
+            openFile.Filter = "Text files (*.txt)| *.txt|All file (*.*)|*.*";
 
             if (openFile.ShowDialog() == true) 
             {
