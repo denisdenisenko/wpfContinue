@@ -14,7 +14,6 @@
         <StackPanel Grid.Row="0" Orientation="Horizontal"
                     HorizontalAlignment="Center">
             <Button x:Name="openFileButton"
-                Grid.Row="0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 Click="openFileButton_Click"
@@ -22,7 +21,6 @@
                    Margin="5">
             </Button>
             <Button x:Name="saveBtn" 
-                Grid.Row="0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                  Content="Save File"

@@ -47,7 +47,14 @@ namespace wpfContinue
 
         private void saveBtn_Click(object sender, RoutedEventArgs e)
         {
+            SaveFileDialog saveFile = new SaveFileDialog();
 
+            saveFile.Filter = "Text files (*.txt)| *.txt|All file (*.*)|*.*";
+
+            if (saveFile.ShowDialog() == true) 
+            {
+                File.WriteAllText(saveFile.FileName, myTextBox.Text);
+            }
         }
     }
 }
