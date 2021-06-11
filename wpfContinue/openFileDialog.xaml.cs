@@ -54,6 +54,7 @@ namespace wpfContinue
             if (saveFile.ShowDialog() == true) 
             {
                 File.WriteAllText(saveFile.FileName, myTextBox.Text);
+                //
             }
         }
     }
