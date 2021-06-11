@@ -44,5 +44,10 @@ namespace wpfContinue
                 myTextBox.Text = File.ReadAllText(openFile.FileName);
             }
         }
+
+        private void saveBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
